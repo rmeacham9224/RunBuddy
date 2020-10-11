@@ -1,56 +1,182 @@
-<!DOCTYPE html> 
-<html lang ="en"> 
-    <head> 
-        <meta charset= "UTF-8" /> 
-        <title> Run Buddy woo </title> 
-    </head> 
-    <body> 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Run Buddy</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        
         <!--navigation-->
         <header>
-            <h1> 
-                <a href="/">RUN BUDDY </a>
-            </h1>  
+            <h1>
+                <a href="/">RUN BUDDY</a> 
+            </h1>
             <nav>
-                <!--Unordered list element--> 
-                <ul> 
+                <!--unordered list elements-->
+                <ul>
                     <!--list item element-->
                     <li>
-                        <!--Anchor element-->
-                        <a href="#what-we-do"></a>
+                        <!--anchor element-->
+                        <a href="#what-we-do">What We Do</a>
                     </li>
                     <li>
-                        <a href="#what-you-do"></a>
+                        <a href="#what-you-do">What You Do</a>
                     </li>
-                    <li> 
-                        <a href="#your-trainers"></a>
+                    <li>
+                        <a href="#your-trainers">Your Trainers</a>
                     </li>
-                    <li> 
-                        <a href="#reach-out"></a>
+                    <li>
+                        <a href="#reach-out">Reach Out</a>
                     </li>
                 </ul>
             </nav>
         </header>
         
-        <!-- hero/jumbotron--> 
-        <section>
-        </section> 
+        <!--hero/jumbotron-->
+        <section class="hero">
+            <div class="hero-form">
+                <h3>Get Started Today</h3>
+                <p>Fill out this form and one of our trainers will schedule a consult.</p>
+                <form>
+                    <label for="name">Enter Full Name:</label>
+                    <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
+                    <label for="email">Enter Email Address:</label>
+                    <input type="email" placeholder="Email Address" name="email" id="email" class="form-input" />
+                    <label for="phone">Enter a Telephone Number:</label>
+                    <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
+                    <p>
+                        Have you worked out with a trainer before? 
+                        <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                        <label for="trainer-yes">Yes</label>
+                        <input type="radio" name="trainer-confirm" id="trainer-no" />
+                        <label for="trainer-no">No</label>
+                    </p>
+                    <p>
+                        <label for="checkbox" >
+                            I acknowledge that I am atleast 18 years or older
+                        </label>
+                        <input type="checkbox" name="age-confirm" id="checkbox" />
+                    </p>
+                    <p>
+                        <button type="submit">
+                            Get Running!
+                        </button>
+                    </p>
+                </form>
+            </div>
+        </section>
+        <!--end hero-->
 
-        <!--"what we do" section-->
-        <section>
-            <h2>What We Do</h2>
+        <!--"what we do section-->
+        <section id="what-we-do" class="intro">
+            <h2 class="section-title primary-border">What We Do</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint officia dolorum velit officiis, saepe nisi impedit ipsum assumenda quam delectus, rerum eaque nam necessitatibus autem? Enim possimus inventore earum quod!
+            </p>
+        </section>
+
+        <!--"what you do" section-->
+        <section id="what-you-do" class="steps">
+            <h2 class="section-title secondary-border">What You Do</h2>
+
+            <div>
+                <img src="./assets/images/01-04-svgs (1)/step-1.svg" alt="" />
+                <h3>Step1: <span>Fill out the form above.</span></h3>
+                <p>You're already here, so why not fill it out?</p>
+            </div>
+
+            <div>
+                <img src="./assets/images/01-04-svgs (1)/step-2.svg" alt="" />
+                <h3>Step 2: <span>Consult with one of our trainers</span></h3>
+                <p>Are you here to build muscle,lose weight, or just feel good?</p>
+            </div>
+
+            <div>
+                <img src="./assets/images/01-04-svgs (1)/step-3.svg" alt="" />
+                <h3>Step 3: <span>Get Running.</span></h3>
+                <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+            </div>
+
+            <div>
+                <img src="./assets/images/01-04-svgs (1)/step-4.svg" alt="" />
+                <h3><span>Step 4: See Results</span></h3>
+                <p>Bi-weekly checkins with your trainer will keep you focused</p>
+            </div>
         </section>
 
         <!--"meet the trainers" section-->
-        <section> 
-            <h2>Meet The Trainers</h2>
+        <section id="your-trainers" class="trainers">
+            <h2 class="section-title primary-border">Meet The Trainers</h2>
+            <article class="trainer">
+                <img src="./assets/images/01-05-trainers (3)/trainer-1.jpg" alt="Aaron Stephens in his workout clothes, ready to pump iron" />
+                <div class="trainer-bio text-left">
+                    <h3>Aaron Stephens</h3>
+                    <h4>Speed/Strength</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi animi architecto perspiciatis saepe totam sapiente assumenda dolores suscipit esse facere enim impedit, aliquid libero odit quam pariatur cum ut consequatur.
+                    </p>
+                </div>
+            </article>
+            
+            <article class="trainer">
+                <div class="trainer-bio text-right">
+                    <h3>Joanna Gill</h3>
+                    <h4>Endurance</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus facilis, obcaecati nihil quae eveniet natus! Rem, mollitia debitis veritatis deserunt magni facilis exercitationem assumenda distinctio quas voluptatibus, ducimus incidunt iure!
+                    </p>
+                </div>
+                <img src="./assets/images/01-05-trainers (3)/trainer-2.jpg" alt="Joanna Gill cooling off after a workout" />
+            </article>
+
+            <article class="trainer">
+                <img src="./assets/images/01-05-trainers (3)/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights" />
+                <div class="trainer-bio text-left">
+                    <h3>Harry "the Headband" Smith</h3>
+                    <h4>Strength</h4>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quidem eos, dolor libero veritatis quaerat porro, laboriosam officiis quibusdam explicabo accusantium placeat? Possimus nisi debitis officiis quam eum quibusdam harum.
+                    </p>
+                </div>
+            </article>
         </section>
 
-        <!-- "reach out" section--> 
-        <section>
-            <h2>Reach Out</h2>
+        <!--"reach out" section-->
+        <section id="reach-out" class="contact">
+            <h2 class="section-title secondary-border">Reach Out</h2>
+            <div class="contact-info">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.4680706351596!2d-86.76721678526089!3d36.0088617195422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88647af3972ed5cd%3A0xe8803bc16bff250f!2s9224%20Foxboro%20Dr%2C%20Brentwood%2C%20TN%2037027!5e0!3m2!1sen!2sus!4v1602355374857!5m2!1sen!2sus" 
+                    frameborder="0"
+                    style="border:0"
+                    allowfullscreen
+                    >
+                    </iframe>
+                <div>
+                    <h3>Run Buddy</h3>
+                    <p>
+                        Any Questions or concerns before signing up?
+                        <br />
+                        Let us know and we'll be happy to talk to you!
+                    </p>
+                    <address>
+                        9224 Foxboro Drive <br />
+                        Brentwood, Tn <br />
+                        37027 <br />
+                        P: 555.RUN.BUDZ (555.786.6829) <br />
+                        E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
+                    </address>
+                </div>
+            </div>
         </section>
-        <footer> 
-            <h2>Made with Love by Run Buddy.</h2>
+
+        <!--footer-->
+        <footer>
+            <h2>❤️ Made with love by Run Buddy.</h2>
+            <div>
+                <a href="privacy-poicy.html">Read Our Privacy Policy</a><br />
+                &copy;2019 Run Buddy, Inc.
+            </div>
         </footer>
-    </body> 
+    </body>
 </html>
